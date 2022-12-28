@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<link rel="stylesheet" type="text/css" href="./css/Style.css">
+    <title>FlightsHotels</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light" id="Home">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="Images/img1.jpg" alt="image"></a>
+        <button class="navbar-toggler" title="navigation" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+          <ul class="navbar-nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#Home" id="hover">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#bar" id="hover">Flights</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#bar" id="hover">Hotels</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#contactus" id="hover">Contact US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="SignUp.html" id="hover">Login/Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+      <div class="mt-4 p-5 text-white" id="bg_image">
+      <div class="container mt-1">
+        <h1>WE TAKE YOU TO EVERY CORNER OF THE WORLD
+            Over 150,000 flights and hotels to choose from</h1>
+        <br>
+        <!-- Nav pills -->
+        <ul class="nav nav-tabs" role="list" id="bar">
+          <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="tab" href="#Flights"><i class="fa fa-plane"></i> Flights</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#Hotels"><i class="fa fa-building"></i> Hotels</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#FlightsHotels"><i class="fa fa-plane"></i> <i class="fa fa-building"></i> Flights+Hotels</a>
+          </li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div id="Flights" class="container tab-pane active"><br>
+              <div class="form-check form-check-inline">
+                  <input type="radio" title="RoundTrip" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Round Trip
+                  <label class="form-check-label" for="radio1"></label></div>
+                  <div class="form-check form-check-inline">
+                  <input type="radio" title="OneWay" class="form-check-input" id="radio2" name="optradio" value="option2">One Way
+                  <label class="form-check-label" for="radio2"></label></div>
+                  <div class="form-check form-check-inline">
+                  <input type="radio" title="MultiCity" class="form-check-input" id="radio3" name="optradio" value="option2">Multi City
+                  <label class="form-check-label" for="radio2"></label>
+                </div>
+              <form class="mt-3 ">
+                <div class="row">
+                  <div class="col">
+                      <label for="Leaving from" class="form-label">Leaving from</label>
+                      <div class="input-group Leaving from">
+                    <input type="text" class="form-control" placeholder="Destination" name="Leaving">
+                    <span class="input-group-append">
+                      <span class="input-group-text bg-light d-block">
+                          <i class="fa fa-map-marker"></i>
+                      </span>
+                    </span>
+                  </div>
+                  </div>
+                  <div class="col">
+                      <label for="Going to" class="form-label">Going to</label>
+                      <div class="input-group Leaving from">
+                    <input type="text" class="form-control" placeholder="Destination" name="Going">
+                    <span class="input-group-append">
+                      <span class="input-group-text bg-light d-block">
+                          <i class="fa fa-map-marker"></i>
+                      </span>
+                    </span>
+                  </div>
+                  </div>
+                  <div class="col">
+                      <label for="Departing" class="form-label">Departing</label>
+        <div class="input-group date" id="datepicker">
+          <input type="date" title="date" class="form-control" placeholder="Date" id="date3"/>
+          
+      </div>
+      </div>
+      <div class="col">
+          <label for="Returning" class="form-label">Returning</label>
+      <div class="input-group date" id="datepicker">
+          <input type="date" title="date" class="form-control" placeholder="Date" id="date4"/>
+          
+      </div>
+  </div>
+  <div class="col">
+      <div class="dropdown">
+          <label for="Select Adults" class="form-label">Select Adults</label>
+          <select class="btn btn-light" title="select">
+                  <option selected>Select Adult</option>
+                  <option value="A1">0</option>
+                  <option value="A1">1</option>
+                  <option value="A2">2</option>
+                  <option value="A3">3</option>
+                  <option value="A4">4</option>
+                  <option value="A5">5</option>
+                  <option value="A6">6</option>
+                </select>
+                </div>
+                
+                </div>
+                <div class="col">
+                  <div class="dropdown">
+                      <label for="Select Child" class="form-label">Select Children</label>
+                  <select class="btn btn-light" title="select">
+                          <option selected>Select Children</option>
+                          <option value="C1">0</option>
+                          <option value="C1">1</option>
+                          <option value="C2">2</option>
+                          <option value="C3">3</option>
+                          <option value="C4">4</option>
+                          <option value="C5">5</option>
+                          <option value="C6">6</option>
+                        </select>
+                        </div>
+                        </div>
+                        <div class="col">
+                          <div class="dropdown">
+                              <label for="Select Flight" class="form-label">Select FlightType</label>
+                          <select class="btn btn-light" title="select">
+                                  <option selected>Select Flight</option>
+                                  <option value="C1">Economy</option>
+                                  <option value="C1">Buisness</option>
+                                  <option value="C1">Premium</option>
+                                </select>
+                                </div>
+                                </div>
+                                <div class="col">
+                                <button type="button" title="search..." class="btn btn-link" id="search_1"><a href="blankfile" target="_blank"><i class="fa fa-search"></i></a></button></div>
+                                </div>
+                                <div class="row mt-3">
+                                  <div class="col">
+                                <div class="form-check">
+                                  <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+                                  <label class="form-check-label" for="check2">Non Stop Flight</label>
+                                </div></div></div>
+                              </form>
+            </div>
+
+          <div id="Hotels" class="container tab-pane fade"><br>
+            <form class="mt-3">
+                <div class="row">
+                  <div class="col">
+                      <label for="Leaving from" class="form-label">Type Your Destination</label>
+                      <div class="input-group Type Your Destination">
+                    <input type="text" class="form-control" placeholder="Type Your Destination" name="Leaving">
+                    <span class="input-group-append">
+                      <span class="input-group-text bg-light d-block">
+                          <i class="fa fa-map-marker"></i>
+                      </span>
+                    </span>
+                  </div>
+                  </div>
+                  <div class="col">
+                      <label for="CheckIN" class="form-label">CheckIN</label>
+        <div class="input-group date" id="datepicker">
+          <input type="date" title="date" class="form-control" placeholder="Date" id="date1"/>
+          
+      </div>
+      </div>
+      <div class="col">
+          <label for="CheckOUT" class="form-label">CheckOUT</label>
+      <div class="input-group date" id="datepicker">
+          <input type="date" title="date" class="form-control" placeholder="Date" id="date2"/>
+          
+      </div>
+  </div>
+  <div class="col">
+      <div class="dropdown">
+          <label for="Select Adults" class="form-label">Select Adults</label>
+          <select class="btn btn-light" title="select">
+                  <option selected>Select Adult</option>
+                  <option value="A1">0</option>
+                  <option value="A1">1</option>
+                  <option value="A2">2</option>
+                  <option value="A3">3</option>
+                  <option value="A4">4</option>
+                  <option value="A5">5</option>
+                  <option value="A6">6</option>
+                </select>
+                </div>
+                
+                </div>
+                <div class="col">
+                  <div class="dropdown">
+                      <label for="Select Child" class="form-label">Select Children</label>
+                  <select class="btn btn-light" title="select">
+                          <option selected>Select Children</option>
+                          <option value="C1">0</option>
+                          <option value="C1">1</option>
+                          <option value="C2">2</option>
+                          <option value="C3">3</option>
+                          <option value="C4">4</option>
+                          <option value="C5">5</option>
+                          <option value="C6">6</option>
+                        </select>
+                        </div>
+                        </div>
+                        <div class="col">
+                          <div class="dropdown">
+                              <label for="Select Room" class="form-label">Select Room</label>
+                          <select class="btn btn-light" title="select">
+                                  <option selected>Select Room</option>
+                          <option value="C1">1</option>
+                          <option value="C2">2</option>
+                          <option value="C3">3</option>
+                          <option value="C4">4</option>
+                          <option value="C5">5</option>
+                          <option value="C6">6</option>
+                        </select>
+                                </div>
+                                </div>
+                                <div class="col">
+                                <button type="button" title="search..." class="btn btn-link" id="search"><a href="file" target="_blank"><i class="fa fa-search"></i></a></button></div>
+                                </div>
+      </form>
+          </div>
+          <div id="FlightsHotels" class="container tab-pane fade"><br>
+          <div class="form-check form-check-inline">
+            <input type="radio" title="RoundTrip" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Round Trip
+            <label class="form-check-label" for="radio1"></label></div>
+            <div class="form-check form-check-inline">
+            <input type="radio" title="OneWay" class="form-check-input" id="radio2" name="optradio" value="option2">One Way
+            <label class="form-check-label" for="radio2"></label></div>
+            <div class="form-check form-check-inline">
+            <input type="radio" title="MultiCity" class="form-check-input" id="radio3" name="optradio" value="option2">Multi City
+            <label class="form-check-label" for="radio2"></label>
+          </div>
+        <form class="mt-3 ">
+          <div class="row">
+            <div class="col">
+                <label for="Leaving from" class="form-label">Leaving from</label>
+                <div class="input-group Leaving from">
+              <input type="text" class="form-control" placeholder="Destination" name="Leaving">
+              <span class="input-group-append">
+                <span class="input-group-text bg-light d-block">
+                    <i class="fa fa-map-marker"></i>
+                </span>
+              </span>
+            </div>
+            </div>
+            <div class="col">
+                <label for="Going to" class="form-label">Going to</label>
+                <div class="input-group Leaving from">
+              <input type="text" class="form-control" placeholder="Destination" name="Going">
+              <span class="input-group-append">
+                <span class="input-group-text bg-light d-block">
+                    <i class="fa fa-map-marker"></i>
+                </span>
+              </span>
+            </div>
+            </div>
+            <div class="col">
+                <label for="Departing" class="form-label">Departing</label>
+  <div class="input-group date" id="datepicker">
+    <input type="date" title="date" class="form-control" placeholder="Date" id="date3"/>
+    
+</div>
+</div>
+<div class="col">
+    <label for="Returning" class="form-label">Returning</label>
+<div class="input-group date" id="datepicker">
+    <input type="date" title="date" class="form-control" placeholder="Date" id="date4"/>
+    
+</div>
+</div>
+<div class="col">
+<div class="dropdown">
+    <label for="Select Adults" class="form-label">Select Adults</label>
+    <select class="btn btn-light" title="select">
+            <option selected>Select Adult</option>
+            <option value="A1">0</option>
+            <option value="A1">1</option>
+            <option value="A2">2</option>
+            <option value="A3">3</option>
+            <option value="A4">4</option>
+            <option value="A5">5</option>
+            <option value="A6">6</option>
+          </select>
+          </div>
+          
+          </div>
+          <div class="col">
+            <div class="dropdown">
+                <label for="Select Child" class="form-label">Select Children</label>
+            <select class="btn btn-light" title="select">
+                    <option selected>Select Children</option>
+                    <option value="C1">0</option>
+                    <option value="C1">1</option>
+                    <option value="C2">2</option>
+                    <option value="C3">3</option>
+                    <option value="C4">4</option>
+                    <option value="C5">5</option>
+                    <option value="C6">6</option>
+                  </select>
+                  </div>
+                  </div>
+                  <div class="col">
+                    <div class="dropdown">
+                      <label for="Select Room" class="form-label">Select Room</label>
+                  <select class="btn btn-light" title="select">
+                          <option selected>Select Room</option>
+                  <option value="C1">1</option>
+                  <option value="C2">2</option>
+                  <option value="C3">3</option>
+                  <option value="C4">4</option>
+                  <option value="C5">5</option>
+                  <option value="C6">6</option>
+                </select>
+                        </div>
+                          </div>
+                          <div class="col">
+                          <button type="button" title="search..." class="btn btn-link" id="search_1"><a href="blankfile" target="_blank"><i class="fa fa-search"></i></a></button></div>
+                          </div>
+                          <div class="row mt-3">
+                            <div class="col">
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+                            <label class="form-check-label" for="check2">Non Stop Flight</label>
+                          </div></div></div>
+                        </form></div>
+      </div>
+          </div>
+          </div>
+        </div>
+          
+
+       <!--  Popular Destinations -->
+<div class="container-fluid p-3">
+  <h1 id="heading2">Popular Destinations</h1></div>
+  <div class="container">
+        <div class="row">
+<div class="column">
+<div class="cont">
+      <img src="Images/img1.jpg"  alt="Italy" class="cont">
+      <div class="overlay">
+        <div class="about">Place you would like to visit.</div>
+      </div>
+      </div>
+      </div>
+        <div class="column">
+<div class="cont">
+      <img src="Images/img2.jpg" alt="Forest" class="cont">
+      <div class="overlay">
+        <div class="about">Place you would like to visit.</div>
+      </div></div></div>
+      
+        <div class="column">
+<div class="cont">
+      <img src="Images/img3.jpg" alt="Mountains" class="cont">
+      <div class="overlay">
+        <div class="about">Place you would like to visit.</div>
+      </div>
+      </div></div>
+      
+        <div class="column">
+<div class="cont">
+        <img src="Images/img4.jpg" alt="Mountains" class="cont">
+        <div class="overlay">
+          <div class="about">Place you would like to visit.</div>
+        </div>
+        </div></div>
+        
+          <div class="column">
+<div class="cont">
+          <img src="Images/img5.jpg" alt="Mountains" class="cont">
+          <div class="overlay">
+            <div class="about">Place you would like to visit.</div>
+          </div>
+          </div></div>
+          
+            <div class="column">
+<div class="cont">
+            <img src="Images/img6.jpg" alt="Mountains" class="cont">
+            <div class="overlay">
+              <div class="about">Place you would like to visit.</div>
+            </div>
+            </div></div>
+            
+              <div class="column">
+<div class="cont">
+              <img src="Images/img7.jpg" alt="Mountains" class="cont">
+              <div class="overlay">
+                <div class="about">Place you would like to visit.</div>
+              </div>  
+            </div></div>
+              
+                <div class="column">
+<div class="cont">
+                <img src="Images/img8.jpg" alt="Mountains" class="cont">
+                <div class="overlay">
+                  <div class="about">Place you would like to visit.</div>
+                </div>  
+              </div></div>
+                
+                  <div class="column">
+<div class="cont">
+                  <img src="Images/img9.jpg" alt="Mountains" class="cont">
+                  <div class="overlay">
+                    <div class="about">Place you would like to visit.</div>
+                  </div>  
+                </div></div>
+                  
+                    <div class="column">
+<div class="cont">
+                    <img src="Images/img10.jpg" alt="Mountains" class="cont">
+                    <div class="overlay">
+                      <div class="about">Place you would like to visit.</div>
+                    </div>
+                  </div>
+                    </div>
+                      <div class="column">
+<div class="cont">
+                      <img src="Images/img11.jpg" alt="Mountains" class="cont">
+                      <div class="overlay">
+                        <div class="about">Place you would like to visit.</div>
+                      </div>  
+                    </div></div>
+                      
+                        <div class="column">
+<div class="cont">
+                        <img src="Images/img12.jpg" alt="Mountains" class="cont">
+                        <div class="overlay">
+                          <div class="about">Place you would like to visit.</div>
+                        </div>  
+                      </div></div>
+                        
+                          <div class="column">
+<div class="cont">
+                          <img src="Images/img13.jpg" alt="Mountains" class="cont">
+                          <div class="overlay">
+                            <div class="about">Place you would like to visit.</div>
+                          </div>  
+                        </div>
+                          </div>
+                            <div class="column">
+<div class="cont">
+                            <img src="Images/img14.jpg" alt="Mountains" class="cont">
+                            <div class="overlay">
+                              <div class="about">Place you would like to visit.</div>
+                            </div>  
+                          </div>
+                            </div>
+                              <div class="column">
+<div class="cont">
+                              <img src="Images/img15.jpg" alt="Mountains" class="cont">
+                              <div class="overlay">
+                                <div class="about">Place you would like to visit.</div>
+                              </div>
+                              </div></div>
+    </div>
+  </div>
+
+<!-- Recommended places -->
+<div class="container-fluid p-3">
+<h1>Recommended Places</h1>
+<div class="container mt-3">
+  <div class="row">
+    <div class="col">
+ 
+  
+  <div class="card">
+    <img class="card-img-top" src="Images/img1.jpg" alt="Card image">
+    <div class="card-body">
+      <h4 class="card-title">Place you would like to visit.</h4>
+      <p class="card-text">Some example text some example text. Place you would like to visit. is an architect and engineer</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+  </div>
+  <div class="col">
+   
+    
+    <div class="card">
+      <img class="card-img-top" src="Images/img2.jpg" alt="Card image">
+      <div class="card-body">
+        <h4 class="card-title">Place you would like to visit.</h4>
+        <p class="card-text">Some example text some example text. Place you would like to visit. is an architect and engineer</p>
+        <a href="#" class="btn btn-primary">See Profile</a>
+      </div>
+    </div>
+    </div>
+    <div class="col">
+     
+      
+      <div class="card">
+        <img class="card-img-top" src="Images/img3.jpg" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">Place you would like to visit.</h4>
+          <p class="card-text">Some example text some example text. Place you would like to visit. is an architect and engineer</p>
+          <a href="#" class="btn btn-primary">See Profile</a>
+        </div>
+      </div>
+      </div>
+      <div class="col">
+       
+        
+        <div class="card">
+          <img class="card-img-top" src="Images/img4.jpg" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Place you would like to visit.</h4>
+            <p class="card-text">Some example text some example text. Place you would like to visit. is an architect and engineer</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+          </div>
+        </div>
+        </div>
+        <div class="col">
+         
+          
+          <div class="card">
+            <img class="card-img-top" src="Images/img5.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Place you would like to visit.</h4>
+              <p class="card-text">Some example text some example text. Place you would like to visit. is an architect and engineer</p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+          </div>
+          </div>
+          <div class="col">
+           
+            
+            <div class="card">
+              <img class="card-img-top" src="Images/img6.jpg" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Place you would like to visit.</h4>
+                <p class="card-text">Some example text some example text. Place you would like to visit. is an architect and engineer</p>
+                <a href="#" class="btn btn-primary">See Profile</a>
+              </div>
+            </div>
+            </div>
+            <div class="col">
+             
+              
+              <div class="card">
+                <img class="card-img-top" src="Images/img7.jpg" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Place you would like to visit.</h4>
+                  <p class="card-text">Some example text some example text. Place you would like to visit. is an architect and engineer</p>
+                  <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+              </div>
+              </div>
+              <div class="col">
+               
+                
+                <div class="card">
+                  <img class="card-img-top" src="Images/img8.jpg" alt="Card image">
+                  <div class="card-body">
+                    <h4 class="card-title">Place you would like to visit.</h4>
+                    <p class="card-text">Some example text some example text. Place you would like to visit. is an architect and engineer</p>
+                    <a href="#" class="btn btn-primary">See Profile</a>
+                  </div>
+                </div>
+                </div>
+                <div class="col">
+                 
+                  
+                  <div class="card">
+                    <img class="card-img-top" src="Images/img9.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Place you would like to visit.</h4>
+                      <p class="card-text">Some example text some example text. Place you would like to visit. is an architect and engineer</p>
+                      <a href="#" class="btn btn-primary">See Profile</a>
+                    </div>
+                  </div>
+                  </div>
+</div>
+</div>
+</div>
+        <!-- Contact US PAGE -->
+  <h1 id="contactus">Contact US</h1>
+  <div class="mt-4 p-5 text-white" id="bg_image1">
+        <div class="mt-3 conatiner">
+          <div class="text-center">
+              <h3 class="text-primary">How Can We Help You?</h3>
+          </div>
+          <div class=" d-flex align-items-center justify-content-center">
+              <div class="bg-white col-md-4">
+                  <div class="p-4 rounded shadow-md">
+                      <div>
+                          <label for="name" class="form-label">Your Name</label>
+                          <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                      </div>
+                      <div class="mt-3">
+                          <label for="email" class="form-label">Your Email</label>
+                          <input type="text" name="email" class="form-control" placeholder="Your Email" required>
+                      </div class="mt-3">
+                      <div class="mt-3">
+                          <label for="subject" class="form-label">Subject</label>
+                          <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                      </div>
+                      <div class="mt-3 mb-3">
+                          <label for="message" class="form-label">Message</label>
+                          <textarea name="message" cols="20" rows="6" class="form-control"
+                              placeholder="message"></textarea>
+                      </div>
+                      <button class="btn btn-primary">
+                          Submit Form
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+      <div class="mt-5 p-2 bg-dark text-white text-center">
+        <p>CopyRight @2022</p>
+      </div>
+</body>
+</html>
